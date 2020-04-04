@@ -1,13 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import {BrowserRouter} from 'react-router-dom';
+import { createBrowserHistory} from "history";
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+const history = createBrowserHistory()//типу нашої навігації
+
 ReactDOM.render(
-  <React.StrictMode>
+  <BrowserRouter>
     <App />
-  </React.StrictMode>,
+    </BrowserRouter>,
   document.getElementById('root')
 );
 

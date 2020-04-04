@@ -1,0 +1,48 @@
+body{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+.center_h2{
+    text-align:center;
+    font-family: 'Roboto', sans-serif;
+}
+.center{
+     display: block;    
+    width: 330px;
+    margin: 0 auto;  
+} 
+.formLabel {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+   
+    transition: all 0.3s;
+    transform: translateX(0.5rem);
+  }
+  
+  .inputText {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    margin-top: 10px;
+    font-size: 1.2rem;
+     
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.2rem;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    width: 200px;
+  
+    border-bottom: 0.3rem solid transparent;
+    transition: all 0.3s;
+  }
+  
+  .inputText:placeholder-shown + .formLabel {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateX(-1rem);
+    transform: translateX(-1rem);
+  }
+
+  .error{
+      color:red;
+      font-family: 'Roboto', sans-serif;
+  }
